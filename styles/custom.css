@@ -33,17 +33,17 @@
     .CodeMirror{
             font-family: "Source Code Pro", source-code-pro,Consolas, monospace;
     }
-	.
-/*    .prompt{
-        display: None;
-    }*/
-    .notebook_app .rendered_html pre, .notebook_app .rendered_html code {
-	font-family: "Source Code Pro", source-code-pro,Consolas, monospace;
-    border: 0;
-    background-color: #444;
-    color: #b0b0b0;
-    padding: 0;
-  }
+    .rendered_html pre,
+    .rendered_html code{
+        font-family: "Monaco","Source Code Pro", source-code-pro,Consolas, monospace;
+        background-color: #f9f2f4;
+        color:#c7254e;
+        border-radius: 4px;
+        font-size: 90%;
+        padding: 2px,4px;
+    }
+
+	
 
     .warning{
         color: rgb( 240, 20, 20 )
@@ -55,8 +55,8 @@
                            extensions: ["AMSmath.js"]
                            },
                 tex2jax: {
-                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+                    inlineMath: [ ['$','$'], ["\(","\)"] ],
+                    displayMath: [ ['$$','$$'], ["\[","\]"] ]
                 },
                 displayAlign: 'center', // Change this to 'center' to center equations.
                 "HTML-CSS": {
